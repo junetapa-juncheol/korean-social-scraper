@@ -1,0 +1,49 @@
+{
+  "name": "korean-social-scraper",
+  "version": "1.0.0",
+  "description": "한국 소셜미디어 및 온라인 플랫폼 데이터 수집 도구",
+  "main": "src/index.js",
+  "bin": {
+    "kss": "src/cli/index.js"
+  },
+  "keywords": [
+    "scraper",
+    "korean",
+    "social-media",
+    "tistory",
+    "naver",
+    "youtube",
+    "instagram",
+    "coupang",
+    "analytics"
+  ],
+  "author": "junetapa-juncheol",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/junetapa-juncheol/korean-social-scraper.git"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "cli": "node src/cli/index.js",
+    "test": "jest",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "puppeteer": "^21.5.0",
+    "commander": "^11.1.0",
+    "cli-table3": "^0.6.3",
+    "colors": "^1.4.0",
+    "moment": "^2.29.4",
+    "fs-extra": "^11.1.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
