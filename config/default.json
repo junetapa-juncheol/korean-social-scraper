@@ -1,0 +1,51 @@
+{
+  "browser": {
+    "headless": true,
+    "timeout": 30000,
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+  },
+  "scraping": {
+    "rate_limit": {
+      "delay_min": 1000,
+      "delay_max": 3000,
+      "max_concurrent": 3
+    },
+    "retry": {
+      "max_attempts": 3,
+      "delay": 2000
+    }
+  },
+  "output": {
+    "format": "json",
+    "directory": "./data",
+    "timestamp": true,
+    "pretty_print": true
+  },
+  "platforms": {
+    "tistory": {
+      "enabled": true,
+      "base_url": "https://tistory.com"
+    },
+    "naver_blog": {
+      "enabled": true,
+      "base_url": "https://blog.naver.com"
+    },
+    "youtube": {
+      "enabled": true,
+      "api_key": "",
+      "base_url": "https://www.googleapis.com/youtube/v3"
+    },
+    "instagram": {
+      "enabled": false,
+      "note": "Instagram requires special handling due to API restrictions"
+    },
+    "coupang": {
+      "enabled": true,
+      "base_url": "https://www.coupang.com"
+    }
+  }
+}
